@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gossip Blast</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div id="downloadArea">
+
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+
+    <div class="page-wrapper">
+
+        <!-- LOGO -->
+        <header class="header">
+            <h1 class="logo">gossip girl</h1>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <div class="layout">
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="left-menu">
+
+                <section>
+                    <h2 class="welcome">welcome</h2>
+
+                    <p>
+                        to Gossip Girl!<br>
+                        The Site ABOUT the Upper East Side,<br>
+                        FOR the Upper East Side and BY the<br>
+                        Upper East Side!
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="gossip">gossip</h2>
+
+                    <p>
+                        The latest "411"<br>
+                        on all the in people.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="pics">pics</h2>
+
+                    <p>
+                        See what the fashionistas<br>
+                        of the UES are wearing.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="parties">parties</h2>
+
+                    <p>
+                        Your invitation was<br>
+                        probably lost in the mail.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="links">links</h2>
+                </section>
+
+            </aside>
+
+            <!-- CENTER COLUMN -->
+            <div class="center-column">
+
+                <!-- GOSSIP CARD -->
+                <main class="post-card" id="captureArea">
+
+                    <h3 id="headline">
+                        Spotted: Serena van der Woodsen
+                    </h3>
+
+                    <img
+                        id="previewImage"
+                        src="assets/images/serena.png"
+                        alt="Preview">
+
+                    <div class="post-text">
+
+                        <p id="gossipText">
+                            Gossip Girl here, your one and only source
+                            into the scandalous lives of Manhattan's elite.
+                        </p>
+
+                        <span class="signature">
+                            XO XO GOSSIP GIRL
+                        </span>
+
+                    </div>
+
+                </main>
+
+                <!-- DOWNLOAD BUTTON -->
+                <button
+                    id="downloadPostBtn"
+                    class="tip-link">
+
+                    DOWNLOAD POST 💾
+
+                </button>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="right-menu">
+
+                <div class="menu-item">
+                    <div class="circle"></div>
+                    <span>home</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="circle"></div>
+                    <span>posts</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="circle"></div>
+                    <span>pics</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="circle"></div>
+                    <span>links</span>
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © 2026 GOSSIP GIRL |
+                PRIVACY POLICY |
+                TERMS OF USE
+            </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script>
+
+const headline =
+    localStorage.getItem("headline");
+
+const gossip =
+    localStorage.getItem("gossip");
+
+const image =
+    localStorage.getItem("image");
+
+if (headline) {
+
+    document
+        .getElementById("headline")
+        .textContent =
+        headline;
+}
+
+if (gossip) {
+
+    document
+        .getElementById("gossipText")
+        .textContent =
+        gossip;
+}
+
+if (image) {
+
+    document
+        .getElementById("previewImage")
+        .src =
+        image;
+}
+
+document
+    .getElementById("downloadPostBtn")
+    .addEventListener("click", () => {
+
+        html2canvas(
+            document.getElementById("downloadArea")
+        ).then((canvas) => {
+
+            const link =
+                document.createElement("a");
+
+            link.download =
+                "gossip-girl-post.png";
+
+            link.href =
+                canvas.toDataURL("image/png");
+
+            link.click();
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

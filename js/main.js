@@ -1,88 +1,61 @@
-// Elements
-
-const imageUpload = document.getElementById("imageUpload");
-const titleInput = document.getElementById("titleInput");
-const storyInput = document.getElementById("storyInput");
-
-const headline = document.getElementById("headline");
-const gossipText = document.getElementById("gossipText");
-const previewImage = document.getElementById("previewImage");
+// =========================
+// GENERATOR PAGE
+// =========================
 
 const generateBtn = document.getElementById("generateBtn");
 
-// Generate Gossip Blast
+if (generateBtn) {
 
-generateBtn.addEventListener("click", () => {
+    const imageUpload =
+        document.getElementById("imageUpload");
 
-    // Update headline
+    const headlineInput =
+        document.getElementById("headlineInput");
 
-    if(titleInput.value.trim() !== ""){
+    const gossipInput =
+        document.getElementById("gossipInput");
 
-        headline.textContent =
-            titleInput.value;
-    }
+    generateBtn.addEventListener("click", () => {
 
-    // Update story
+        const file =
+            imageUpload.files[0];
 
-    if(storyInput.value.trim() !== ""){
+        if (!file) {
 
-        gossipText.textContent =
-            storyInput.value;
-    }
+            alert("Please upload an image first.");
 
-    // Update image
-
-    const file =
-        imageUpload.files[0];
-
-    if(file){
+            return;
+        }
 
         const reader =
             new FileReader();
 
-        reader.onload = function(event){
+        reader.onload = function (event) {
 
-            previewImage.src =
-                event.target.result;
+            localStorage.setItem(
+                "headline",
+                headlineInput.value
+            );
+
+            localStorage.setItem(
+                "gossip",
+                gossipInput.value
+            );
+
+            localStorage.setItem(
+                "image",
+                event.target.result
+            );
+
+            window.open(
+                "gossip.html",
+                "_blank"
+            );
+
         };
 
         reader.readAsDataURL(file);
-    }
 
-});
-// Download Gossip Blast
+    });
 
-const downloadBtn =
-    document.getElementById("downloadBtn");
-
-downloadBtn.addEventListener("click", () => {
-
-    console.log("Download clicked");
-
-    const area = document.body;
-
-    console.log("Area:", area);
-
-    html2canvas(area)
-        .then((canvas) => {
-
-            console.log("Canvas created");
-
-            const link = document.createElement("a");
-
-            link.download = "gossip-girl-blast.png";
-
-            link.href = canvas.toDataURL("image/png");
-
-            console.log("Download starting");
-
-            link.click();
-
-        })
-        .catch((error) => {
-
-            console.error("html2canvas error:", error);
-
-        });
-
-});
+}
