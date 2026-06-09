@@ -1,23 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gossip Girl Generator</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
-    rel="stylesheet">
-
-
+    <title>Gossip Girl Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
 
 <!-- BACKGROUND -->
 <div class="background"></div>
@@ -34,10 +25,8 @@
 
         <!-- LEFT SIDEBAR -->
         <aside class="left-menu">
-
             <section>
                 <h2 class="welcome">welcome</h2>
-
                 <p>
                     to Gossip Girl!<br>
                     The Site ABOUT the Upper East Side,<br>
@@ -45,115 +34,150 @@
                     Upper East Side!
                 </p>
             </section>
-
             <section>
                 <h2 class="gossip">gossip</h2>
-
                 <p>
                     The latest "411"<br>
                     on all the in people.
                 </p>
             </section>
-
             <section>
                 <h2 class="pics">pics</h2>
-
                 <p>
                     See what the fashionistas<br>
                     of the UES are wearing.
                 </p>
             </section>
-
             <section>
                 <h2 class="parties">parties</h2>
-
                 <p>
                     Your invitation was<br>
                     probably lost in the mail.
                 </p>
             </section>
-
             <section>
                 <h2 class="links">links</h2>
             </section>
-
         </aside>
 
         <!-- CENTER COLUMN -->
-<div class="center-column">
+        <div class="center-column">
 
-    <!-- CENTER GOSSIP CARD -->
-    <main class="post-card" id="captureArea">
+            <!-- CENTER GOSSIP CARD -->
+            <main class="post-card" id="captureArea">
+                <h3 id="headline">
+                    Spotted: Serena van der Woodsen
+                </h3>
+                <img
+                    id="previewImage"
+                    src="assets/images/serena.png"
+                    alt="Serena van der Woodsen">
+                <div class="post-text">
+                    <p id="gossipText">
+                        Gossip Girl here, your one and only
+                        source into the scandalous lives of
+                        Manhattan's elite.
+                    </p>
+                    <span class="signature">
+                        XO XO GOSSIP GIRL
+                    </span>
+                </div>
+            </main>
 
-        <h3 id="headline">
-            Spotted: Serena van der Woodsen
-        </h3>
-
-        <img
-            id="previewImage"
-            src="assets/images/serena.png"
-            alt="Serena van der Woodsen">
-
-        <div class="post-text">
-
-            <p id="gossipText">
-                Gossip Girl here, your one and only
-                source into the scandalous lives of
-                Manhattan's elite.
-            </p>
-
-            <span class="signature">
-                XO XO GOSSIP GIRL
-            </span>
+            <a href="generator.html" class="tip-link">
+                SEND A TIP 💋
+            </a>
 
         </div>
 
-    </main>
-
-    <a href="generator.html" class="tip-link">
-        SEND A TIP 💋
-    </a>
-
-</div>
-
         <!-- RIGHT SIDEBAR -->
         <aside class="right-menu">
-
             <div class="menu-item">
                 <div class="circle home-circle"></div>
                 <span>home</span>
             </div>
-
             <div class="menu-item">
                 <div class="circle posts-circle"></div>
                 <span>posts</span>
             </div>
-
             <div class="menu-item">
                 <div class="circle pics-circle"></div>
                 <span>pics</span>
             </div>
-
             <div class="menu-item">
                 <div class="circle links-circle"></div>
                 <span>links</span>
             </div>
-
         </aside>
 
     </div>
 
-<!-- FOOTER -->
-<footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 GOSSIP GIRL |
+            PRIVACY POLICY |
+            TERMS OF USE
+        </p>
+    </footer>
 
-    <p>
-        © 2026 GOSSIP GIRL |
-        PRIVACY POLICY |
-        TERMS OF USE
-    </p>
+</div>
 
-</footer>
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="assets/audio/Gossip Girl Theme Song (Instrumental).mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUTE BUTTON -->
+<button id="musicToggle" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: transparent;
+    border: 1px solid #ff7eb9;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff7eb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255,126,185,0.4);
+">🔊</button>
+
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    const bgMusic    = document.getElementById("bgMusic");
+    const musicToggle = document.getElementById("musicToggle");
+
+    // remember user preference
+    const savedMute = localStorage.getItem("musicMuted");
+    if (savedMute === "true") {
+        bgMusic.muted = true;
+        musicToggle.textContent = "🔇";
+    }
+
+    // start on first click
+    document.addEventListener("click", () => {
+        if (bgMusic.paused) {
+            bgMusic.volume = 0.050;
+            bgMusic.play();
+        }
+    }, { once: true });
+
+    // toggle mute and save preference
+    musicToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        bgMusic.muted = !bgMusic.muted;
+        musicToggle.textContent = bgMusic.muted ? "🔇" : "🔊";
+        localStorage.setItem("musicMuted", bgMusic.muted);
+    });
+</script>
+
 </body>
 </html>

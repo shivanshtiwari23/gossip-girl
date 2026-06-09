@@ -55,11 +55,10 @@
 
                     <h3 id="headline">Spotted: Serena van der Woodsen</h3>
 
-                    <!-- FIX 2: object-fit keeps photo from warping -->
                     <div
-    id="previewImage"
-    style="width: 100%; height: 320px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url('assets/images/serena.png');">
-</div>
+                        id="previewImage"
+                        style="width: 100%; height: 320px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url('assets/images/serena.png');">
+                    </div>
 
                     <div class="post-text">
                         <p id="gossipText">
@@ -75,10 +74,11 @@
                 <button id="downloadPostBtn" class="tip-link">
                     DOWNLOAD POST 💾
                 </button>
+
                 <!-- SPEAKER BUTTON -->
-<button id="speakBtn" style="background: transparent; border: none; cursor: pointer; margin-top: -5px;">
-    <img src="assets/images/speaker.png" style="width: 40px; height: 40px; filter: invert(1);" />
-</button>
+                <button id="speakBtn" style="background: transparent; border: none; cursor: pointer; margin-top: -5px;">
+                    <img src="assets/images/speaker.png" style="width: 40px; height: 40px; filter: invert(1);" />
+                </button>
 
             </div>
 
@@ -100,22 +100,47 @@
     </div>
 </div>
 
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="assets/audio/Gossip Girl Theme Song (Instrumental).mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUTE BUTTON -->
+<button id="musicToggle" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: transparent;
+    border: 1px solid #ff7eb9;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff7eb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255,126,185,0.4);
+">🔊</button>
+
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 <script>
+    // ── LOAD DATA ──
     const headline = localStorage.getItem("headline");
     const gossip   = localStorage.getItem("gossip");
     const image    = localStorage.getItem("image");
 
     if (headline) document.getElementById("headline").textContent = headline;
     if (gossip)   document.getElementById("gossipText").textContent = gossip;
-    if (image) document.getElementById("previewImage").style.backgroundImage = `url(${image})`;
+    if (image)    document.getElementById("previewImage").style.backgroundImage = `url(${image})`;
 
+    // ── DOWNLOAD ──
     document.getElementById("downloadPostBtn").addEventListener("click", () => {
-
-        // FIX 1: capture #downloadArea (includes .background), not .page-wrapper
         html2canvas(document.getElementById("downloadArea"), {
-            backgroundColor: null,  // let .background render naturally
+            backgroundColor: null,
             scale: 3,
             useCORS: true,
             allowTaint: true
@@ -125,15 +150,40 @@
             link.href = canvas.toDataURL("image/png", 1.0);
             link.click();
         });
-
     });
-window.addEventListener("load", () => {
 
-    const text = document.getElementById("gossipText").textContent.trim();
-    const name = document.getElementById("headline").textContent.trim();
+    // ── MUSIC ──
+    const bgMusic     = document.getElementById("bgMusic");
+    const musicToggle = document.getElementById("musicToggle");
 
-    const fullScript =
-`Hello, Upper East Siders.
+    const savedMute = localStorage.getItem("musicMuted");
+    if (savedMute === "true") {
+        bgMusic.muted = true;
+        musicToggle.textContent = "🔇";
+    }
+
+    document.addEventListener("click", () => {
+        if (bgMusic.paused) {
+            bgMusic.volume = 0.050;
+            bgMusic.play();
+        }
+    }, { once: true });
+
+    musicToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        bgMusic.muted = !bgMusic.muted;
+        musicToggle.textContent = bgMusic.muted ? "🔇" : "🔊";
+        localStorage.setItem("musicMuted", bgMusic.muted);
+    });
+
+    // ── SPEECH ──
+    window.addEventListener("load", () => {
+
+        const text = document.getElementById("gossipText").textContent.trim();
+        const name = document.getElementById("headline").textContent.trim();
+
+        const fullScript =
+`... Hello, Upper East Siders.
 
 ${name}.
 
@@ -145,38 +195,31 @@ X O X O
 
 Gossip Girl.`;
 
-    function speak() {
+        function speak() {
+    const utterance = new SpeechSynthesisUtterance(fullScript);
+    utterance.rate   = 0.75;
+    utterance.pitch  = 1.15;
+    utterance.volume = 1;
 
-        const utterance = new SpeechSynthesisUtterance(fullScript);
-
-        utterance.rate = 0.75;
-        utterance.pitch = 1.15;
-        utterance.volume = 1;
-
+    function setVoiceAndSpeak() {
         const voices = speechSynthesis.getVoices();
-
-        const zira = voices.find(v =>
-            v.name.includes("Zira")
-        );
-
-        if (zira) {
-            utterance.voice = zira;
-            console.log("Using:", zira.name);
-        }
-
+        const zira   = voices.find(v => v.name.includes("Zira"));
+        if (zira) utterance.voice = zira;
         speechSynthesis.speak(utterance);
     }
 
-    speechSynthesis.onvoiceschanged = () => {
-        console.log(speechSynthesis.getVoices());
-    };
-
-   document.getElementById("speakBtn").addEventListener("click", () => {
+    if (speechSynthesis.getVoices().length > 0) {
+        setVoiceAndSpeak();
+    } else {
+        speechSynthesis.onvoiceschanged = setVoiceAndSpeak;
+    }
+}
+        document.getElementById("speakBtn").addEventListener("click", () => {
             window.speechSynthesis.cancel();
             speak();
         });
 
-});
+    });
 </script>
 
 </body>

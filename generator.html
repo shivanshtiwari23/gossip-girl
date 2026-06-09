@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Send a Tip | Gossip Girl</title>
-
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -49,7 +47,60 @@
 
     </section>
 
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/Gossip Girl Theme Song (Instrumental).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MUTE BUTTON -->
+    <button id="musicToggle" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background: transparent;
+        border: 1px solid #ff7eb9;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #ff7eb9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(255,126,185,0.4);
+    ">🔊</button>
+
     <script src="js/main.js"></script>
+
+    <script>
+        const bgMusic     = document.getElementById("bgMusic");
+        const musicToggle = document.getElementById("musicToggle");
+
+        // remember user preference
+        const savedMute = localStorage.getItem("musicMuted");
+        if (savedMute === "true") {
+            bgMusic.muted = true;
+            musicToggle.textContent = "🔇";
+        }
+
+        // start on first click
+        document.addEventListener("click", () => {
+            if (bgMusic.paused) {
+                bgMusic.volume = 0.050;
+                bgMusic.play();
+            }
+        }, { once: true });
+
+        // toggle mute and save preference
+        musicToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            bgMusic.muted = !bgMusic.muted;
+            musicToggle.textContent = bgMusic.muted ? "🔇" : "🔊";
+            localStorage.setItem("musicMuted", bgMusic.muted);
+        });
+    </script>
 
 </body>
 </html>
