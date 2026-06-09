@@ -1,3 +1,4 @@
+
 /* =========================
    RESET
 ========================= */
@@ -25,13 +26,11 @@ body {
 }
 
 .background {
-    position: absolute;   /* ← was fixed */
+    position: absolute;
     inset: 0;
-
     background-image: url("../assets/images/background.png");
     background-size: cover;
     background-position: center top;
-
     z-index: 0;
 }
 
@@ -39,9 +38,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, 0.35);
-
     z-index: 1;
 }
 
@@ -51,11 +48,12 @@ body {
 
 .page-wrapper {
     position: relative;
-    z-index: 2;           /* ← sits above the background */
+    z-index: 2;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
 }
+
 /* =========================
    LOGO
 ========================= */
@@ -67,16 +65,10 @@ body {
 
 .logo {
     font-family: "Century Gothic", sans-serif;
-
     font-size: 175px;
-    letter-spacing: -10px;
-
     font-weight: 100;
-
     letter-spacing: -8px;
-
     color: #efe7b0;
-
     line-height: 0.85;
 }
 
@@ -85,29 +77,21 @@ body {
 ========================= */
 
 .layout {
-
     width: 760px;
-
     margin: -35px auto 0 auto;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: flex-start;
 }
 
 /* =========================
    LEFT SIDEBAR
 ========================= */
-.left-menu {
-    width: 140px;
-    margin-top: 70px;
-    margin-left: 40px;
-}
 
 .left-menu {
     width: 120px;
+    margin-top: 70px;
+    margin-left: 40px;
 }
 
 .left-menu section {
@@ -127,88 +111,54 @@ body {
 
 /* COLORS */
 
-.welcome {
-    color: #00a8ff;
-}
-
-.gossip {
-    color: #ff6b35;
-}
-
-.pics {
-    color: #ffff55;
-}
-
-.parties {
-    color: #ff4da6;
-}
-
-.links {
-    color: #64d83c;
-}
+.welcome { color: #00a8ff; }
+.gossip  { color: #ff6b35; }
+.pics    { color: #ffff55; }
+.parties { color: #ff4da6; }
+.links   { color: #64d83c; }
 
 /* =========================
    CENTER CARD
 ========================= */
 
 .post-card {
-
     width: 280px;
     margin-top: 65px;
-
     background: #eeeeee;
-
     border-radius: 6px;
-
     padding: 8px;
-
     color: #444;
 }
 
 .post-card h3 {
-
     font-size: 12px;
-
     margin-bottom: 8px;
-
     font-weight: bold;
 }
 
 .post-card img {
-
     width: 100%;
-
-    height: auto;
-
+    height: 320px;
     object-fit: cover;
-
+    object-position: center;
     display: block;
 }
 
 .post-text {
-
     padding-top: 8px;
 }
 
 .post-text p {
-
     font-size: 11px;
-
     line-height: 1.35;
 }
 
 .signature {
-
     display: block;
-
     margin-top: 8px;
-
     text-align: right;
-
     color: #59caff;
-
     font-size: 9px;
-
     text-transform: uppercase;
 }
 
@@ -223,37 +173,24 @@ body {
 }
 
 .menu-item {
-
     display: flex;
-
     align-items: center;
-
     margin-bottom: 18px;
-
     gap: 8px;
 }
 
 .circle {
-
     width: 48px;
-
     height: 48px;
-
     border-radius: 50%;
-
     border: 2px solid #d7cd8c;
-
     background-size: cover;
-
     background-position: center;
-
     background-color: #222;
 }
 
 .menu-item span {
-
     color: #d7cd8c;
-
     font-size: 13px;
 }
 
@@ -261,241 +198,218 @@ body {
    NAV PHOTOS
 ========================= */
 
-.menu-item:nth-child(1) .circle {
-    background-image: url("../assets/images/nate.jpg");
-}
-
-.menu-item:nth-child(2) .circle {
-    background-image: url("../assets/images/chuck.jpg");
-}
-
-.menu-item:nth-child(3) .circle {
-    background-image: url("../assets/images/blair.png");
-}
-
-.menu-item:nth-child(4) .circle {
-    background-image: url("../assets/images/jenny.png");
-}
+.menu-item:nth-child(1) .circle { background-image: url("../assets/images/nate.jpg"); }
+.menu-item:nth-child(2) .circle { background-image: url("../assets/images/chuck.jpg"); }
+.menu-item:nth-child(3) .circle { background-image: url("../assets/images/blair.png"); }
+.menu-item:nth-child(4) .circle { background-image: url("../assets/images/jenny.png"); }
 
 /* =========================
    GENERATOR SECTION
 ========================= */
 
 .generator {
-
     min-height: 100vh;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     padding: 100px 20px;
 }
 
 .generator-box {
-
     width: 700px;
-
     padding: 40px;
-
     border-radius: 12px;
-
     background: rgba(0, 0, 0, 0.60);
-
     backdrop-filter: blur(12px);
-
     border: 1px solid rgba(239, 231, 176, 0.25);
-
-    box-shadow:
-        0 0 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 .generator-box h2 {
-
     text-align: center;
-
     color: #efe7b0;
-
     font-size: 48px;
-
     font-weight: 300;
-
     margin-bottom: 10px;
 }
 
 .tip-text {
-
     text-align: center;
-
     color: rgba(255,255,255,0.75);
-
     margin-bottom: 30px;
-
     font-size: 15px;
 }
 
 .generator-box input[type="file"] {
-
     width: 100%;
-
     margin-bottom: 20px;
-
     color: white;
 }
 
 .generator-box input[type="text"],
 .generator-box textarea {
-
     width: 100%;
-
     padding: 14px 16px;
-
     margin-bottom: 15px;
-
     border: none;
-
     border-radius: 6px;
-
     font-size: 15px;
-
     font-family: inherit;
-
     background: rgba(255,255,255,0.95);
-
     color: #333;
 }
 
 .generator-box textarea {
-
     height: 180px;
-
     resize: vertical;
 }
 
 .generator-box button {
-
     width: 100%;
-
     padding: 14px;
-
     margin-top: 10px;
-
     border: none;
-
     border-radius: 6px;
-
     cursor: pointer;
-
     font-size: 15px;
-
     font-weight: bold;
-
     background: #efe7b0;
-
     color: black;
-
     transition: all 0.2s ease;
 }
 
 .generator-box button:hover {
-
     transform: translateY(-2px);
-
     background: #f6efc7;
 }
 
-#downloadBtn {
-
-    background: white;
-
-    color: black;
-}
-
-#downloadBtn:hover {
-
-    background: #f1f1f1;
-}
+#downloadBtn { background: white; color: black; }
+#downloadBtn:hover { background: #f1f1f1; }
 
 .homepage-cta {
-
     display: flex;
-    margin-top: -120px;
-    margin-bottom: 15px;
-
     justify-content: center;
-
     margin-top: -40px;
-
     margin-bottom: 40px;
 }
+
 .tip-link {
-    margin-top: 12px;
-
-    padding: 10px 24px;
-
-    background: linear-gradient(
-        to bottom,
-        #ffb6d9,
-        #ff7eb9
-    );
-    padding: 14px 34px;   /* bigger button */
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-
-    border-radius: 25px;
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-
-    border-radius: 20px;
-
-    border: 2px solid #ffd6eb;
-
-    box-shadow:
-        0 0 10px rgba(255, 126, 185, 0.6);
-
-    transition: all 0.2s ease;
     margin-top: 4px;
     margin-bottom: 25px;
+    padding: 14px 34px;
+    background: linear-gradient(to bottom, #ffb6d9, #ff7eb9);
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #ffd6eb;
+    box-shadow: 0 0 10px rgba(255, 126, 185, 0.6);
+    transition: all 0.2s ease;
 }
 
 .tip-link:hover {
     transform: translateY(-2px);
-
-    box-shadow:
-        0 0 18px rgba(255, 126, 185, 0.9);
+    box-shadow: 0 0 18px rgba(255, 126, 185, 0.9);
 }
+
 .center-column {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .generator .post-card {
     margin: 40px auto 0;
 }
+
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-
     text-align: center;
-
     color: #d7cd8c;
-
     font-size: 11px;
-
     margin-top: 30px;
-
     padding-bottom: 20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* logo */
+    .logo {
+        font-size: 80px;
+        letter-spacing: -4px;
+    }
+
+    /* stack layout vertically */
+    .layout {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 16px;
+    }
+
+    /* hide sidebars on mobile */
+    .left-menu {
+        display: none;
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+    /* center card full width */
+    .post-card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* generator box full width */
+    .generator-box {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .generator-box h2 {
+        font-size: 32px;
+    }
+
+    /* buttons full width */
+    .tip-link {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    /* music button position */
+    #musicToggle {
+        bottom: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+
+    .post-card {
+        width: 100%;
+    }
+
+    .generator {
+        padding: 60px 16px;
+    }
 }
