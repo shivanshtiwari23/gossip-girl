@@ -47,11 +47,7 @@ if (generateBtn) {
                 event.target.result
             );
 
-            window.open(
-                "gossip.html",
-                "_blank"
-            );
-
+            window.location.href = "gossip.html";
         };
 
         reader.readAsDataURL(file);
