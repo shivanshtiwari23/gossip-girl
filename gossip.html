@@ -75,6 +75,10 @@
                 <button id="downloadPostBtn" class="tip-link">
                     DOWNLOAD POST 💾
                 </button>
+                <!-- SPEAKER BUTTON -->
+<button id="speakBtn" style="background: transparent; border: none; cursor: pointer; margin-top: -5px;">
+    <img src="assets/images/speaker.png" style="width: 40px; height: 40px; filter: invert(1);" />
+</button>
 
             </div>
 
@@ -123,6 +127,56 @@
         });
 
     });
+window.addEventListener("load", () => {
+
+    const text = document.getElementById("gossipText").textContent.trim();
+    const name = document.getElementById("headline").textContent.trim();
+
+    const fullScript =
+`Hello, Upper East Siders.
+
+${name}.
+
+${text}
+
+You know you love me.
+
+X O X O
+
+Gossip Girl.`;
+
+    function speak() {
+
+        const utterance = new SpeechSynthesisUtterance(fullScript);
+
+        utterance.rate = 0.75;
+        utterance.pitch = 1.15;
+        utterance.volume = 1;
+
+        const voices = speechSynthesis.getVoices();
+
+        const zira = voices.find(v =>
+            v.name.includes("Zira")
+        );
+
+        if (zira) {
+            utterance.voice = zira;
+            console.log("Using:", zira.name);
+        }
+
+        speechSynthesis.speak(utterance);
+    }
+
+    speechSynthesis.onvoiceschanged = () => {
+        console.log(speechSynthesis.getVoices());
+    };
+
+   document.getElementById("speakBtn").addEventListener("click", () => {
+            window.speechSynthesis.cancel();
+            speak();
+        });
+
+});
 </script>
 
 </body>
