@@ -19,15 +19,20 @@ body {
    BACKGROUND
 ========================= */
 
+#downloadArea {
+    position: relative;
+    min-height: 100vh;
+}
+
 .background {
-    position: fixed;
+    position: absolute;   /* ← was fixed */
     inset: 0;
 
     background-image: url("../assets/images/background.png");
     background-size: cover;
     background-position: center top;
 
-    z-index: -2;
+    z-index: 0;
 }
 
 .background::after {
@@ -37,7 +42,7 @@ body {
 
     background: rgba(0, 0, 0, 0.35);
 
-    z-index: -1;
+    z-index: 1;
 }
 
 /* =========================
@@ -45,11 +50,12 @@ body {
 ========================= */
 
 .page-wrapper {
+    position: relative;
+    z-index: 2;           /* ← sits above the background */
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
 }
-
 /* =========================
    LOGO
 ========================= */
@@ -172,7 +178,7 @@ body {
 
     width: 100%;
 
-    height: 255px;
+    height: auto;
 
     object-fit: cover;
 
