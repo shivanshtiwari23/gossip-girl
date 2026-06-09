@@ -376,6 +376,8 @@ footer {
     .generator-box {
         width: 100%;
         padding: 24px 16px;
+        position: relative;
+        z-index: 3;
     }
 
     .generator-box h2 {
@@ -395,6 +397,21 @@ footer {
         width: 36px;
         height: 36px;
         font-size: 16px;
+    }
+
+    /* fix background covering content on Safari */
+    .background {
+        position: fixed;
+        z-index: -1;
+    }
+
+    .background::after {
+        z-index: -1;
+    }
+
+    .generator {
+        position: relative;
+        z-index: 2;
     }
 }
 
