@@ -9,5 +9,9 @@ use here -> https://shivanshtiwari23.github.io/gossip-girl/
 ** added a new feature of speaker button using Zira by microsoft this button offers text to speech narration and imitates the kristen bell's narration in the original tv show **
 <img width="1675" height="784" alt="image" src="https://github.com/user-attachments/assets/75788833-3bec-44c1-8b29-356be26ea9be" />
 
+
+** added gossip girl intro music as BGM**
+
+
 Author- Shivansh Tiwari
 
