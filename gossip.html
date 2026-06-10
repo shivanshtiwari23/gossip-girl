@@ -196,32 +196,25 @@ X O X O
 Gossip Girl.`;
 
         function speak() {
-            const utterance = new SpeechSynthesisUtterance(fullScript);
-            utterance.rate   = 0.75;
-            utterance.pitch  = 1.15;
-            utterance.volume = 1;
+    const utterance = new SpeechSynthesisUtterance(fullScript);
+    utterance.rate   = 0.75;
+    utterance.pitch  = 1.15;
+    utterance.volume = 1;
 
-            // Safari on iPhone uses different voice names
-            function setVoiceAndSpeak() {
-                const voices = speechSynthesis.getVoices();
+    const isSafariIOS = /iP(hone|od|ad)/.test(navigator.userAgent);
 
-                const preferred = voices.find(v =>
-                    v.name.includes("Zira")    ||
-                    v.name.includes("Samantha") ||  // Safari Mac/iOS female
-                    v.name.includes("Karen")    ||  // Safari iOS female
-                    v.name.includes("Moira")        // Safari Irish female
-                );
+    if (!isSafariIOS) {
+        const voices = speechSynthesis.getVoices();
+        const preferred = voices.find(v =>
+            v.name.includes("Zira")     ||
+            v.name.includes("Samantha") ||
+            v.name.includes("Karen")
+        );
+        if (preferred) utterance.voice = preferred;
+    }
 
-                if (preferred) utterance.voice = preferred;
-                speechSynthesis.speak(utterance);
-            }
-
-            if (speechSynthesis.getVoices().length > 0) {
-                setVoiceAndSpeak();
-            } else {
-                speechSynthesis.onvoiceschanged = setVoiceAndSpeak;
-            }
-        }
+    speechSynthesis.speak(utterance);
+}
 
         document.getElementById("speakBtn").addEventListener("click", () => {
             window.speechSynthesis.cancel();
