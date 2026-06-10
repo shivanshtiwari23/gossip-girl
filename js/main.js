@@ -30,25 +30,36 @@ if (generateBtn) {
         const reader =
             new FileReader();
 
-        reader.onload = function (event) {
+       reader.onload = function (event) {
 
-            localStorage.setItem(
-                "headline",
-                headlineInput.value
-            );
+    // compress image before storing
+    const img = new Image();
+    img.src = event.target.result;
 
-            localStorage.setItem(
-                "gossip",
-                gossipInput.value
-            );
+    img.onload = function () {
 
-            localStorage.setItem(
-                "image",
-                event.target.result
-            );
+        const canvas = document.createElement("canvas");
 
-            window.location.href = "gossip.html";
-        };
+        // max width 800px to keep size small
+        const maxWidth = 800;
+        const scale    = Math.min(1, maxWidth / img.width);
+
+        canvas.width  = img.width  * scale;
+        canvas.height = img.height * scale;
+
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        const compressed = canvas.toDataURL("image/jpeg", 0.7);
+
+        localStorage.setItem("headline", headlineInput.value);
+        localStorage.setItem("gossip",   gossipInput.value);
+        localStorage.setItem("image",    compressed);
+
+        window.location.href = "gossip.html";
+    };
+
+};
 
         reader.readAsDataURL(file);
 
