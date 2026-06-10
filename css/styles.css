@@ -144,6 +144,15 @@ body {
     display: block;
 }
 
+#previewImage {
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+}
+
 .post-text {
     padding-top: 8px;
 }
