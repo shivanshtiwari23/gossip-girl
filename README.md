@@ -1,27 +1,116 @@
-# gossip-girl
-a simple gossip girl web app that generates gossip girl themed aesthetic blast.
-use here -> https://shivanshtiwari23.github.io/gossip-girl/
-<img width="1894" height="861" alt="image" src="https://github.com/user-attachments/assets/5978efbc-3067-4aec-b771-f5526959e32c" />
-<img width="1890" height="873" alt="image" src="https://github.com/user-attachments/assets/c7e58bd7-2d78-48aa-a083-81e25e6aba3b" />
-<img width="1898" height="859" alt="image" src="https://github.com/user-attachments/assets/7bd1edb2-11eb-4f79-ac7c-00f21dc3404b" />
+# Gossip Blast
+
+A Gossip Girl-inspired web application that lets users create aesthetic Gossip Girl-style blasts with custom headlines, gossip text, images, background music, and narration.
+
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-green)
+
+🌐 **Live Website:** https://shivanshtiwari23.github.io/gossip-girl/
+
+---
+
+## Features
+
+### ✨ Gossip Blast Generator
+
+Create custom Gossip Girl-style blasts by adding:
+
+* A headline
+* Gossip text
+* Custom images
+* Signature Gossip Girl aesthetic styling
+
+---
+
+### 🔊 Narration Button
+
+Includes a text-to-speech feature powered by the browser's speech synthesis engine.
+
+The app attempts to use **Microsoft Zira** (when available) to provide a narration style reminiscent of Kristen Bell's iconic Gossip Girl voiceovers.
+
+---
+
+### 🎵 Background Music
+
+The website includes Gossip Girl-inspired intro background music to enhance the overall experience and atmosphere.
+
+---
+
+## Screenshots
+
+### Home Page
+
+<img width="1888" height="860" alt="image" src="https://github.com/user-attachments/assets/7983a196-63f3-49f8-9167-55e0253560d9" />
 
 
-** added a new feature of speaker button using Zira by microsoft this button offers text to speech narration and imitates the kristen bell's narration in the original tv show **
-<img width="1675" height="784" alt="image" src="https://github.com/user-attachments/assets/75788833-3bec-44c1-8b29-356be26ea9be" />
+---
+
+### Generator Page
+
+<img width="1889" height="861" alt="image" src="https://github.com/user-attachments/assets/7c4d5c9f-8f02-41ea-8b76-7fc9387347b5" />
 
 
-** added gossip girl intro music as BGM**
-## ⚠️ Safari / iPhone Notice
+---
 
-This project works best on **Google Chrome** (desktop or Android).
+### Generated Blast Example
+
+<img width="1897" height="874" alt="image" src="https://github.com/user-attachments/assets/085b9fb2-f17d-4bc0-85a4-040f7aefa48a" />
+
+
+---
+
+### Narration Feature
+
+<img width="439" height="162" alt="image" src="https://github.com/user-attachments/assets/45d32105-726c-4a3f-949a-063f6937e19f" />
+
+
+---
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Web Speech API
+* GitHub Pages
+
+---
+
+## Safari / iPhone Notice
+
+This project works best on **Google Chrome** (Desktop or Android).
 
 If you are using **Safari on iPhone**, please note the following known limitations:
 
-- **Text-to-speech** may default to a male voice. This is a Safari iOS restriction — the browser does not allow web apps to select a specific voice the same way Chrome does.
-- **Background music** requires a tap/click to start due to Safari's autoplay policy.
-- **Download feature** has not been fully tested on Safari iOS and may behave differently.
+* Text-to-speech may default to a male voice due to Safari restrictions.
+* Background music requires user interaction before playback because of Safari autoplay policies.
+* Download functionality may behave differently and has not been extensively tested on Safari iOS.
 
-For the best experience, open this site in **Chrome on desktop or Android**.
+For the best experience, use **Google Chrome**.
 
-Author- Shivansh Tiwari
+---
+
+## Future Plans
+
+* Improved mobile responsiveness
+* Community tip submission system
+* Public gossip feed
+* Additional visual effects and animations
+* More customization options for generated blasts
+
+---
+
+## Disclaimer
+
+This is a non-commercial fan project created for entertainment and educational purposes.
+
+*Gossip Girl* and all related characters, names, music, and intellectual property belong to their respective owners.
+
+---
+
+## Author
+
+**Shivansh Tiwari**
 
