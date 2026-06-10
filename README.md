@@ -11,7 +11,17 @@ use here -> https://shivanshtiwari23.github.io/gossip-girl/
 
 
 ** added gossip girl intro music as BGM**
+## ⚠️ Safari / iPhone Notice
 
+This project works best on **Google Chrome** (desktop or Android).
+
+If you are using **Safari on iPhone**, please note the following known limitations:
+
+- **Text-to-speech** may default to a male voice. This is a Safari iOS restriction — the browser does not allow web apps to select a specific voice the same way Chrome does.
+- **Background music** requires a tap/click to start due to Safari's autoplay policy.
+- **Download feature** has not been fully tested on Safari iOS and may behave differently.
+
+For the best experience, open this site in **Chrome on desktop or Android**.
 
 Author- Shivansh Tiwari
 
