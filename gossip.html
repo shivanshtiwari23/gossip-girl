@@ -201,19 +201,18 @@ Gossip Girl.`;
     utterance.pitch  = 1.15;
     utterance.volume = 1;
 
-    const isSafariIOS = /iP(hone|od|ad)/.test(navigator.userAgent);
-
-    if (!isSafariIOS) {
+    function setVoiceAndSpeak() {
         const voices = speechSynthesis.getVoices();
-        const preferred = voices.find(v =>
-            v.name.includes("Zira")     ||
-            v.name.includes("Samantha") ||
-            v.name.includes("Karen")
-        );
-        if (preferred) utterance.voice = preferred;
+        const zira   = voices.find(v => v.name.includes("Zira"));
+        if (zira) utterance.voice = zira;
+        speechSynthesis.speak(utterance);
     }
 
-    speechSynthesis.speak(utterance);
+    if (speechSynthesis.getVoices().length > 0) {
+        setVoiceAndSpeak();
+    } else {
+        speechSynthesis.onvoiceschanged = setVoiceAndSpeak;
+    }
 }
 
         document.getElementById("speakBtn").addEventListener("click", () => {
