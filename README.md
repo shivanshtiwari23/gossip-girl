@@ -39,6 +39,13 @@ The website includes Gossip Girl-inspired intro background music to enhance the 
 ---
 
 ## Screenshots
+---
+### Splash Screen
+
+<img width="1901" height="869" alt="image" src="https://github.com/user-attachments/assets/eee3a955-f19b-4386-861a-3697afa96408" />
+
+
+---
 
 ### Home Page
 
