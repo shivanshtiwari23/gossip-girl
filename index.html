@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 <!-- SPLASH SCREEN -->
 <div id="splash" style="
     position: fixed;
@@ -23,8 +24,7 @@
     cursor: pointer;
     overflow: hidden;
 ">
-
-    <!-- TOP STRIP — moves right to left -->
+    <!-- TOP STRIP -->
     <div style="
         position: absolute;
         top: 60px;
@@ -35,38 +35,31 @@
         mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     ">
-        <div id="stripTop" style="
-            display: flex;
-            gap: 12px;
-            width: max-content;
-            animation: scrollLeft 15.5s linear infinite;
-            will-change: transform;
-        ">
-             <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <!-- duplicates for seamless loop -->
-    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+        <div id="stripTop" style="display: flex; gap: 12px; width: max-content; animation: scrollLeft 15.5s linear infinite; will-change: transform;">
+            <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
         </div>
     </div>
 
@@ -98,7 +91,7 @@
         z-index: 2;
     ">You know you love me. XOXO</p>
 
-    <!-- BOTTOM STRIP — moves left to right -->
+    <!-- BOTTOM STRIP -->
     <div style="
         position: absolute;
         bottom: 60px;
@@ -109,38 +102,31 @@
         mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     ">
-        <div id="stripBottom" style="
-            display: flex;
-            gap: 12px;
-            width: max-content;
-            animation: scrollRight 15.5s linear infinite;
-            will-change: transform;
-        ">
+        <div id="stripBottom" style="display: flex; gap: 12px; width: max-content; animation: scrollRight 15.5s linear infinite; will-change: transform;">
             <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <!-- duplicates for seamless loop -->
-    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
-    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+            <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
         </div>
     </div>
 
@@ -159,76 +145,6 @@
 
 </div>
 
-<style>
-    @keyframes scrollLeft {
-        0%   { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-    @keyframes scrollRight {
-        0%   { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
-    }
-</style>
-<script>
-    const splash     = document.getElementById("splash");
-    const splashLogo = document.getElementById("splashLogo");
-    const splashTag  = document.getElementById("splashTag");
-    const splashHint = document.getElementById("splashHint");
-
-    // fade in logo
-    setTimeout(() => { splashLogo.style.opacity = "1"; }, 300);
-
-    // fade in tagline
-    setTimeout(() => { splashTag.style.opacity = "1"; }, 1000);
-
-    // fade in hint
-    setTimeout(() => { splashHint.style.opacity = "1"; }, 1600);
-
-    splash.addEventListener("click", () => {
-
-    // strips fly out fast
-    const stripTop    = document.getElementById("stripTop").parentElement;
-    const stripBottom = document.getElementById("stripBottom").parentElement;
-
-    stripTop.style.transition    = "transform 0.3s ease, opacity 0.3s ease";
-    stripTop.style.transform     = "translateY(-100%)";
-    stripTop.style.opacity       = "0";
-
-    stripBottom.style.transition = "transform 0.3s ease, opacity 0.3s ease";
-    stripBottom.style.transform  = "translateY(100%)";
-    stripBottom.style.opacity    = "0";
-
-    // fade out tagline and hint
-    splashTag.style.transition  = "opacity 0.4s ease";
-    splashTag.style.opacity     = "0";
-    splashHint.style.transition = "opacity 0.4s ease";
-    splashHint.style.opacity    = "0";
-
-    // logo expands forward then splits out
-    setTimeout(() => {
-        splashLogo.style.transition    = "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, letter-spacing 0.6s ease";
-        splashLogo.style.transform     = "scale(2.5)";
-        splashLogo.style.letterSpacing = "80px";
-        splashLogo.style.opacity       = "0";
-    }, 300);
-
-    // fade out entire splash
-    setTimeout(() => {
-        splash.style.transition = "opacity 0.5s ease";
-        splash.style.opacity    = "0";
-    }, 800);
-
-    // remove splash
-    setTimeout(() => {
-        splash.remove();
-        if (typeof bgMusic !== "undefined" && bgMusic.paused) {
-            bgMusic.volume = 0.15;
-            bgMusic.play();
-        }
-    }, 1300);
-
-});
-</script>
 <!-- BACKGROUND -->
 <div class="background"></div>
 
@@ -246,33 +162,19 @@
         <aside class="left-menu">
             <section>
                 <h2 class="welcome">welcome</h2>
-                <p>
-                    to Gossip Girl!<br>
-                    The Site ABOUT the Upper East Side,<br>
-                    FOR the Upper East Side and BY the<br>
-                    Upper East Side!
-                </p>
+                <p>to Gossip Girl!<br>The Site ABOUT the Upper East Side,<br>FOR the Upper East Side and BY the<br>Upper East Side!</p>
             </section>
             <section>
                 <h2 class="gossip">gossip</h2>
-                <p>
-                    The latest "411"<br>
-                    on all the in people.
-                </p>
+                <p>The latest "411"<br>on all the in people.</p>
             </section>
             <section>
                 <h2 class="pics">pics</h2>
-                <p>
-                    See what the fashionistas<br>
-                    of the UES are wearing.
-                </p>
+                <p>See what the fashionistas<br>of the UES are wearing.</p>
             </section>
             <section>
                 <h2 class="parties">parties</h2>
-                <p>
-                    Your invitation was<br>
-                    probably lost in the mail.
-                </p>
+                <p>Your invitation was<br>probably lost in the mail.</p>
             </section>
             <section>
                 <h2 class="links">links</h2>
@@ -281,63 +183,34 @@
 
         <!-- CENTER COLUMN -->
         <div class="center-column">
-
-            <!-- CENTER GOSSIP CARD -->
             <main class="post-card" id="captureArea">
-                <h3 id="headline">
-                    Spotted: Serena van der Woodsen
-                </h3>
-                <img
-                    id="previewImage"
-                    src="assets/images/serena.png"
-                    alt="Serena van der Woodsen">
+                <h3 id="headline">Spotted: Serena van der Woodsen</h3>
+                <img id="previewImage" src="assets/images/serena.png" alt="Serena van der Woodsen">
                 <div class="post-text">
                     <p id="gossipText">
                         Gossip Girl here, your one and only
                         source into the scandalous lives of
                         Manhattan's elite.
                     </p>
-                    <span class="signature">
-                        XO XO GOSSIP GIRL
-                    </span>
+                    <span class="signature">XO XO GOSSIP GIRL</span>
                 </div>
             </main>
-
-            <a href="generator.html" class="tip-link">
-                SEND A TIP 💋
-            </a>
-
+            <a href="generator.html" class="tip-link">SEND A TIP 💋</a>
         </div>
 
         <!-- RIGHT SIDEBAR -->
         <aside class="right-menu">
-            <div class="menu-item">
-                <div class="circle home-circle"></div>
-                <span>home</span>
-            </div>
-            <div class="menu-item">
-                <div class="circle posts-circle"></div>
-                <span>posts</span>
-            </div>
-            <div class="menu-item">
-                <div class="circle pics-circle"></div>
-                <span>pics</span>
-            </div>
-            <div class="menu-item">
-                <div class="circle links-circle"></div>
-                <span>links</span>
-            </div>
+            <div class="menu-item"><div class="circle home-circle"></div><span>home</span></div>
+            <div class="menu-item"><div class="circle posts-circle"></div><span>posts</span></div>
+            <div class="menu-item"><div class="circle pics-circle"></div><span>pics</span></div>
+            <div class="menu-item"><div class="circle links-circle"></div><span>links</span></div>
         </aside>
 
     </div>
 
     <!-- FOOTER -->
     <footer>
-        <p>
-            © 2026 GOSSIP GIRL |
-            PRIVACY POLICY |
-            TERMS OF USE
-        </p>
+        <p>© 2026 GOSSIP GIRL | PRIVACY POLICY | TERMS OF USE</p>
     </footer>
 
 </div>
@@ -367,140 +240,14 @@
     box-shadow: 0 0 10px rgba(255,126,185,0.4);
 ">🔊</button>
 
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-    const bgMusic    = document.getElementById("bgMusic");
-    const musicToggle = document.getElementById("musicToggle");
-
-    // remember user preference
-    const savedMute = localStorage.getItem("musicMuted");
-    if (savedMute === "true") {
-        bgMusic.muted = true;
-        musicToggle.textContent = "🔇";
-    }
-
-    // start on first click
-    document.addEventListener("click", () => {
-        if (bgMusic.paused) {
-            bgMusic.volume = 0.15;
-            bgMusic.play();
-        }
-    }, { once: true });
-
-    // toggle mute and save preference
-    musicToggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-        bgMusic.muted = !bgMusic.muted;
-        musicToggle.textContent = bgMusic.muted ? "🔇" : "🔊";
-        localStorage.setItem("musicMuted", bgMusic.muted);
-    });
-</script>
-
 <!-- HOVER SOUND -->
 <audio id="hoverSound" src="assets/audio/hover.mp3" preload="auto"></audio>
 
-<script>
-    // hover sound + 3D glow effect on left and right menu items
-    const hoverSound = document.getElementById("hoverSound");
-
-   const hoverItems = document.querySelectorAll(
-    ".left-menu section, .menu-item"
-);
-const buttonItems = document.querySelectorAll(".tip-link");
-
-buttonItems.forEach(btn => {
-    btn.addEventListener("mouseenter", () => {
-        hoverSound.currentTime = 0;
-        hoverSound.volume = 1.0;
-        hoverSound.play();
-    });
-});
-
-    hoverItems.forEach(item => {
-        item.addEventListener("mouseenter", () => {
-
-            // play hover sound
-            hoverSound.currentTime = 0;
-            hoverSound.volume = 1.0;
-            hoverSound.play();
-
-            // 3D float + glow
-            item.style.transform       = "translateY(-4px) scale(1.8) translateZ(20px)";
-            item.style.transition      = "transform 0.2s ease, text-shadow 0.2s ease, filter 0.2s ease";
-            item.style.textShadow      = "0 0 12px currentColor, 0 0 30px currentColor";
-            item.style.filter          = "brightness(1.4)";
-            item.style.cursor          = "pointer";
-        });
-
-        item.addEventListener("mouseleave", () => {
-            item.style.transform  = "translateY(0) scale(1) translateZ(0)";
-            item.style.textShadow = "none";
-            item.style.filter     = "brightness(1)";
-        });
-    });
-
-    // circles on right menu — bigger scale
-    const circles = document.querySelectorAll(".circle");
-
-    circles.forEach(circle => {
-        circle.addEventListener("mouseenter", () => {
-            hoverSound.currentTime = 0;
-            hoverSound.volume = 1.0;
-            hoverSound.play();
-
-            circle.style.transition = "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease";
-            circle.style.transform  = "translateY(-8px) scale(1.5)";
-            circle.style.boxShadow  = "0 0 20px #d7cd8c, 0 0 40px #d7cd8c";
-        });
-
-        circle.addEventListener("mouseleave", () => {
-            circle.style.transform = "translateY(0) scale(1)";
-            circle.style.boxShadow = "none";
-        });
-    });
-    // LOGO hover — subtle glow
-    const logo = document.querySelector(".logo");
-
-    logo.addEventListener("mouseenter", () => {
-        hoverSound.currentTime = 0;
-        hoverSound.volume = 1.0;
-        hoverSound.play();
-
-        logo.style.transition    = "transform 0.3s ease, text-shadow 0.3s ease, letter-spacing 0.3s ease";
-        logo.style.transform     = "scale(1.03) translateY(-4px)";
-        logo.style.textShadow    = "0 0 15px #efe7b0, 0 0 30px rgba(239,231,176,0.4)";
-        logo.style.letterSpacing = "-4px";
-        logo.style.cursor        = "default";
-    });
-
-    logo.addEventListener("mouseleave", () => {
-        logo.style.transform     = "scale(1) translateY(0)";
-        logo.style.textShadow    = "none";
-        logo.style.letterSpacing = "-8px";
-    });
-
-     // CENTER CARD — jump up and expand
-    const card = document.querySelector(".post-card");
-
-    card.addEventListener("mouseenter", () => {
-        hoverSound.currentTime = 0;
-        hoverSound.volume = 1.0;
-        hoverSound.play();
-
-        card.style.transition  = "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease";
-        card.style.transform   = "translateY(-16px) scale(1.35)";
-        card.style.boxShadow   = "0 30px 80px rgba(0,0,0,0.7), 0 0 30px #d7cd8c, 0 0 60px rgba(215,205,140,0.4)";
-        card.style.zIndex      = "10";
-    });
-
-    card.addEventListener("mouseleave", () => {
-        card.style.transform = "translateY(0) scale(1)";
-        card.style.boxShadow = "none";
-        card.style.zIndex    = "1";
-    });
-</script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/splash.js"></script>
+<script src="js/hover.js"></script>
 
 </body>
 </html>
