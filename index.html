@@ -21,7 +21,56 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    overflow: hidden;
 ">
+
+    <!-- TOP STRIP — moves right to left -->
+    <div style="
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 120px;
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    ">
+        <div id="stripTop" style="
+            display: flex;
+            gap: 12px;
+            width: max-content;
+            animation: scrollLeft 15.5s linear infinite;
+            will-change: transform;
+        ">
+             <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <!-- duplicates for seamless loop -->
+    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+        </div>
+    </div>
+
+    <!-- LOGO -->
     <h1 id="splashLogo" style="
         font-family: 'Century Gothic', sans-serif;
         font-size: clamp(60px, 12vw, 140px);
@@ -30,8 +79,12 @@
         color: #F4EED8;
         opacity: 0;
         transition: opacity 1.5s ease;
-        text-shadow: 0 0 40px rgba(239,231,176,0.8);
+        text-shadow: 0 0 40px rgba(244,238,216,0.8);
+        position: relative;
+        z-index: 2;
     ">gossip girl</h1>
+
+    <!-- TAGLINE -->
     <p id="splashTag" style="
         font-family: 'Century Gothic', sans-serif;
         font-size: clamp(10px, 2vw, 14px);
@@ -41,19 +94,81 @@
         transition: opacity 1.5s ease;
         margin-top: 16px;
         text-transform: uppercase;
+        position: relative;
+        z-index: 2;
     ">You know you love me. XOXO</p>
+
+    <!-- BOTTOM STRIP — moves left to right -->
+    <div style="
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 120px;
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    ">
+        <div id="stripBottom" style="
+            display: flex;
+            gap: 12px;
+            width: max-content;
+            animation: scrollRight 15.5s linear infinite;
+            will-change: transform;
+        ">
+            <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <!-- duplicates for seamless loop -->
+    <img src="assets/images/still7.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still8.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still9.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still10.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still11.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still12.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still1.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still2.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still3.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still4.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still5.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+    <img src="assets/images/still6.jpg" style="height: 120px; width: auto; object-fit: cover; opacity: 0.6;" />
+        </div>
+    </div>
+
+    <!-- TAP HINT -->
     <p id="splashHint" style="
         position: absolute;
-        bottom: 40px;
+        bottom: 16px;
         font-size: 11px;
         letter-spacing: 4px;
         color: rgba(244,238,216,0.3);
         opacity: 0;
         transition: opacity 1s ease;
         text-transform: uppercase;
+        z-index: 2;
     ">tap to enter</p>
+
 </div>
 
+<style>
+    @keyframes scrollLeft {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    @keyframes scrollRight {
+        0%   { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+    }
+</style>
 <script>
     const splash     = document.getElementById("splash");
     const splashLogo = document.getElementById("splashLogo");
@@ -64,43 +179,55 @@
     setTimeout(() => { splashLogo.style.opacity = "1"; }, 300);
 
     // fade in tagline
-    setTimeout(() => { splashTag.style.opacity = "1"; }, 1200);
+    setTimeout(() => { splashTag.style.opacity = "1"; }, 1000);
 
     // fade in hint
-    setTimeout(() => { splashHint.style.opacity = "1"; }, 2200);
+    setTimeout(() => { splashHint.style.opacity = "1"; }, 1600);
 
     splash.addEventListener("click", () => {
 
-        // fade out tagline and hint immediately
-        splashTag.style.transition  = "opacity 0.4s ease";
-        splashTag.style.opacity     = "0";
-        splashHint.style.transition = "opacity 0.4s ease";
-        splashHint.style.opacity    = "0";
+    // strips fly out fast
+    const stripTop    = document.getElementById("stripTop").parentElement;
+    const stripBottom = document.getElementById("stripBottom").parentElement;
 
-        // logo expands forward then splits out
-        setTimeout(() => {
-            splashLogo.style.transition  = "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, letter-spacing 0.6s ease";
-            splashLogo.style.transform   = "scale(2.5)";
-            splashLogo.style.letterSpacing = "80px";
-            splashLogo.style.opacity     = "0";
-        }, 300);
+    stripTop.style.transition    = "transform 0.3s ease, opacity 0.3s ease";
+    stripTop.style.transform     = "translateY(-100%)";
+    stripTop.style.opacity       = "0";
 
-        // fade out entire splash
-        setTimeout(() => {
-            splash.style.transition = "opacity 0.5s ease";
-            splash.style.opacity    = "0";
-        }, 800);
+    stripBottom.style.transition = "transform 0.3s ease, opacity 0.3s ease";
+    stripBottom.style.transform  = "translateY(100%)";
+    stripBottom.style.opacity    = "0";
 
-        // remove splash
-        setTimeout(() => {
-            splash.remove();
-            if (typeof bgMusic !== "undefined" && bgMusic.paused) {
-                bgMusic.volume = 0.15;
-                bgMusic.play();
-            }
-        }, 1300);
+    // fade out tagline and hint
+    splashTag.style.transition  = "opacity 0.4s ease";
+    splashTag.style.opacity     = "0";
+    splashHint.style.transition = "opacity 0.4s ease";
+    splashHint.style.opacity    = "0";
 
-    });
+    // logo expands forward then splits out
+    setTimeout(() => {
+        splashLogo.style.transition    = "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, letter-spacing 0.6s ease";
+        splashLogo.style.transform     = "scale(2.5)";
+        splashLogo.style.letterSpacing = "80px";
+        splashLogo.style.opacity       = "0";
+    }, 300);
+
+    // fade out entire splash
+    setTimeout(() => {
+        splash.style.transition = "opacity 0.5s ease";
+        splash.style.opacity    = "0";
+    }, 800);
+
+    // remove splash
+    setTimeout(() => {
+        splash.remove();
+        if (typeof bgMusic !== "undefined" && bgMusic.paused) {
+            bgMusic.volume = 0.15;
+            bgMusic.play();
+        }
+    }, 1300);
+
+});
 </script>
 <!-- BACKGROUND -->
 <div class="background"></div>
