@@ -1,0 +1,253 @@
+/* ================================
+   GOSSIP GIRL — PINK THEME
+   Based on original show website
+================================ */
+
+/* BACKGROUND */
+body {
+    background: #dca2be !important;
+}
+
+.background {
+    background: #dca2be !important;
+    min-height: 100%;
+}
+
+.background::after {
+    background: transparent !important;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    background: transparent;
+}
+
+/* HEADER */
+/* HEADER */
+.header {
+    background: linear-gradient(
+        180deg,
+        #d4006e 0%,
+        #e8559a 50%,
+        #f2a7c3 100%
+    );
+
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 3px solid #c0005a;
+}
+.header::before {
+    content: "gossip";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -55%);
+
+    font-size: 260px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    color: rgba(255,255,255,0.08);
+
+    line-height: 1;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+.header::after {
+    content: "...you know you love me";
+    position: absolute;
+    right: 40px;
+    bottom: 16px;
+    font-family: "Helvetica Neue", Helvetica, Impact, sans-serif;
+    font-style: italic;
+    font-size: clamp(16px, 2.5vw, 33px);
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.logo {
+    font-family: "Century Gothic", sans-serif !important;
+    color: #fff !important;
+
+    text-shadow: none !important;
+
+    font-weight: 100 !important;
+
+    letter-spacing: -8px !important;
+
+    font-size: 100px !important;
+    position: relative;
+top: -15px;
+    line-height: 0.85;
+     position: relative;
+    z-index: 2;
+}
+
+/* LAYOUT */
+.layout {
+    background: #fce8f0;
+    border-left: 1px solid #f0a0c0;
+    border-right: 1px solid #f0a0c0;
+    border: 3px solid #000 !important;
+   margin-top: 0px !important;
+}
+
+/* LEFT SIDEBAR */
+.left-menu {
+    background: #fce8f0;
+}
+
+.left-menu p {
+    color: #333 !important;
+    font-style: italic;
+}
+.left-menu section {
+    margin-bottom: 28px !important;
+}
+.left-menu h2 {
+    font-family: Impact, "Helvetica Neue", Helvetica, sans-serif;
+
+    color: #E0007B !important;
+
+    font-size: 2rem !important;
+
+    font-weight: normal !important;
+
+    font-style: italic !important;
+
+    text-transform: lowercase;
+
+    margin: 0 0 8px 0 !important;
+
+    line-height: 1;
+
+    letter-spacing: 0;
+
+    text-shadow: none !important;
+
+    opacity: 0.88;
+
+    transform: none !important;
+}
+
+.welcome,
+.gossip,
+.pics,
+.parties,
+.links {
+    color: #c00063 !important;
+}
+
+/* CENTER CARD */
+.post-card {
+    background: #fff !important;
+
+    border: 1px solid #000 !important;
+
+    box-shadow: none !important;
+
+    border-radius: 0 !important;
+}
+
+.post-card h3 {
+    color: #d4006e !important;
+    font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif !important;
+    font-size: 16px !important;
+}
+
+.signature {
+    color: #d4006e !important;
+}
+
+.post-text p {
+    color: #333 !important;
+}
+
+/* RIGHT MENU */
+.right-menu {
+    background: #fce8f0;
+}
+
+.menu-item span {
+    color: #d4006e !important;
+}
+
+.circle {
+    border-color: #d4006e !important;
+    background-color: #f9c !important;
+}
+
+/* BUTTONS */
+.tip-link {
+    background: #ded6a5 !important;
+
+    border: 1px solid #c7bc87 !important;
+
+    color: #000 !important;
+     border: 1px solid #000 !important;
+    box-shadow: none !important;
+}
+
+/* MUSIC TOGGLE */
+#musicToggle {
+    border-color: #d4006e !important;
+    color: #d4006e !important;
+    box-shadow: 0 0 10px rgba(212,0,110,0.4) !important;
+}
+
+/* THEME TOGGLE */
+#themeToggle {
+    border-color: #d4006e !important;
+    color: #d4006e !important;
+    box-shadow: 0 0 10px rgba(212,0,110,0.4) !important;
+}
+
+/* FOOTER */
+footer {
+    color: #d4006e !important;
+    background: #fce8f0;
+    border-top: 1px solid #f0a0c0;
+}
+
+/* DOWNLOAD/SPEAKER BUTTONS */
+#downloadPostBtn,
+#speakBtn {
+    border-color: #d4006e !important;
+    box-shadow: 0 0 10px rgba(212,0,110,0.4) !important;
+}
+
+#downloadPostBtn img,
+#speakBtn img {
+    filter: none !important;
+}
+.left-menu p,
+.left-menu p:hover {
+    text-shadow: none !important;
+}
+/* GOLDEN HOVER GLOW */
+.menu-item:hover span {
+    text-shadow:
+        0 0 4px rgba(255,245,180,0.6),
+        0 0 8px rgba(255,235,140,0.4),
+        0 0 12px rgba(255,225,100,0.2) !important;
+}
+.menu-item:hover .circle {
+    box-shadow:
+        0 0 6px rgba(255,245,180,0.8),
+        0 0 14px rgba(255,235,140,0.5) !important;
+}

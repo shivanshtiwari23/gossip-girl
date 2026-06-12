@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Send a Tip | Gossip Girl</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link id="themeLink" rel="stylesheet" href="">
 </head>
 
 <body>
@@ -102,6 +103,26 @@
             localStorage.setItem("musicMuted", bgMusic.muted);
         });
     </script>
+<!-- THEME TOGGLE -->
+<button id="themeToggle" style="
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 9999;
+    background: transparent;
+    border: 1px solid #ff7eb9;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff7eb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255,126,185,0.4);
+">💋</button>
 
+<script src="js/theme.js"></script>
 </body>
 </html>
