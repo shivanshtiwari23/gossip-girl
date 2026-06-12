@@ -38,6 +38,11 @@ The website includes Gossip Girl-inspired intro background music to enhance the 
 
 ---
 
+### 🌙 Theme
+
+The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate blasts in different aesthetics.
+
+---
 ## Screenshots
 ---
 ### Splash Screen
@@ -71,6 +76,19 @@ The website includes Gossip Girl-inspired intro background music to enhance the 
 ### Narration Feature
 
 <img width="439" height="162" alt="image" src="https://github.com/user-attachments/assets/45d32105-726c-4a3f-949a-063f6937e19f" />
+
+
+---
+
+### 🌙 Theme
+
+<img width="1901" height="864" alt="Screenshot 2026-06-12 183931" src="https://github.com/user-attachments/assets/7f430977-65de-408e-9ee2-61a9896d9e84" />
+
+<img width="1896" height="861" alt="Screenshot 2026-06-12 183943" src="https://github.com/user-attachments/assets/b653f76f-4a6e-427c-97dc-54187b6c6784" />
+
+<img width="1896" height="860" alt="Screenshot 2026-06-12 184038" src="https://github.com/user-attachments/assets/80ce64eb-7094-471f-8b04-02bb87e474e0" />
+
+<img width="103" height="148" alt="Screenshot 2026-06-12 184051" src="https://github.com/user-attachments/assets/ab4ad7fd-1f65-4659-9a56-d54a02c049c2" />
 
 
 ---
