@@ -38,7 +38,7 @@ The website includes Gossip Girl-inspired intro background music to enhance the 
 
 ---
 
-### 🌙 Pink Theme
+### 🌙 Themes
 
 The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate blasts in different aesthetics.
 
@@ -80,7 +80,7 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 
 ---
 
-### 🌙 Theme
+### 🌙 Pink Theme
 
 <img width="1901" height="864" alt="Screenshot 2026-06-12 183931" src="https://github.com/user-attachments/assets/7f430977-65de-408e-9ee2-61a9896d9e84" />
 
