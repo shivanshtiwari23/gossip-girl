@@ -82,14 +82,16 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 
 ### 🌙 Pink Theme
 
-<img width="1901" height="864" alt="Screenshot 2026-06-12 183931" src="https://github.com/user-attachments/assets/7f430977-65de-408e-9ee2-61a9896d9e84" />
+<img width="1899" height="871" alt="image" src="https://github.com/user-attachments/assets/66a126c0-1730-4c42-a5ac-04e3fcb13cdc" />
+
 
 <img width="1896" height="861" alt="Screenshot 2026-06-12 183943" src="https://github.com/user-attachments/assets/b653f76f-4a6e-427c-97dc-54187b6c6784" />
 
-<img width="1896" height="860" alt="Screenshot 2026-06-12 184038" src="https://github.com/user-attachments/assets/80ce64eb-7094-471f-8b04-02bb87e474e0" />
 
-<img width="103" height="148" alt="Screenshot 2026-06-12 184051" src="https://github.com/user-attachments/assets/ab4ad7fd-1f65-4659-9a56-d54a02c049c2" />
+<img width="1901" height="871" alt="image" src="https://github.com/user-attachments/assets/baf2e939-cbf4-431d-9f6c-cc76aec796f9" />
 
+
+<img width="106" height="183" alt="image" src="https://github.com/user-attachments/assets/449bc8cb-d55a-4937-9e3a-19d63f1d8d9c" />
 
 ---
 
