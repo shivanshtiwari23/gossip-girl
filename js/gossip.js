@@ -75,3 +75,57 @@ Gossip Girl.`;
     });
 
 });
+document.getElementById('uploadPostBtn').addEventListener('click', async () => {
+    const headline = document.getElementById('headline').innerText;
+    const gossipText = document.getElementById('gossipText').innerText;
+
+    // Get the background image URL from the preview div
+    const previewDiv = document.getElementById('previewImage');
+    const bgImage = previewDiv.style.backgroundImage;
+    const imageUrl = bgImage.slice(5, -2); // strips url(" and ")
+
+    // Fetch the image as a blob
+    const response = await fetch(imageUrl);
+    const blob = await response.blob();
+
+    // Compress image before upload
+    const compressed = await compressImage(blob);
+
+    const formData = new FormData();
+    formData.append('image', compressed, 'gossip.jpg');
+    formData.append('headline', headline);
+    formData.append('gossipText', gossipText);
+    formData.append('postType', 'GOSSIP');
+
+    try {
+        const res = await fetch('https://gossip-girl-api-production.up.railway.app/posts/upload', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await res.json();
+        if (res.ok) {
+            alert('Your gossip is live. XOXO 💋');
+        } else {
+            alert('Failed to post. Try again.');
+        }
+    } catch (err) {
+        alert('Something went wrong. XOXO');
+        console.error(err);
+    }
+});
+
+async function compressImage(blob) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const maxWidth = 800;
+            const scale = Math.min(1, maxWidth / img.width);
+            canvas.width = img.width * scale;
+            canvas.height = img.height * scale;
+            canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+            canvas.toBlob(resolve, 'image/jpeg', 0.7);
+        };
+        img.src = URL.createObjectURL(blob);
+    });
+}

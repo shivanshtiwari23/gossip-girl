@@ -1,0 +1,271 @@
+.parties-right {
+    padding-top: 40px !important;
+}
+
+.parties-container {
+    display: flex;
+    gap: 48px;
+    max-width: 1100px;
+    align-items: flex-start;
+}
+
+.parties-feed {
+    flex: 1;
+    min-width: 0;
+}
+
+.party-generator {
+    width: 320px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 24px;
+}
+
+.parties-section-title {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: rgba(215,205,140,0.6);
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+.party-subtitle {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* PARTY FORM */
+.party-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.party-form input[type="text"],
+.party-form textarea {
+    width: 100%;
+    background: rgba(20,20,20,0.82);
+    border: 1px solid rgba(215,205,140,0.2);
+    border-radius: 4px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    padding: 10px 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: none;
+}
+
+.party-form input[type="text"]:focus,
+.party-form textarea:focus {
+    border-color: rgba(215,205,140,0.5);
+}
+
+.party-form input::placeholder,
+.party-form textarea::placeholder {
+    color: rgba(255,255,255,0.25);
+    font-style: italic;
+}
+
+.party-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.party-fields input[type="date"],
+.party-fields input[type="time"] {
+    width: 100%;
+    background: rgba(20,20,20,0.82);
+    border: 1px solid rgba(215,205,140,0.2);
+    border-radius: 4px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    padding: 10px 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    color-scheme: dark;
+}
+
+.party-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-label {
+    background: transparent;
+    border: 1px solid rgba(215,205,140,0.3);
+    color: rgba(215,205,140,0.7);
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.upload-label:hover {
+    border-color: rgba(215,205,140,0.7);
+    color: rgba(215,205,140,1);
+}
+
+.upload-name {
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    font-style: italic;
+}
+
+.party-preview {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(215,205,140,0.2);
+}
+
+.party-preview img {
+    width: 100%;
+    display: block;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.party-form button {
+    background: transparent;
+    border: 1px solid rgba(215,205,140,0.4);
+    color: rgba(215,205,140,0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+
+.party-form button:hover {
+    border-color: rgba(215,205,140,0.9);
+    color: rgba(215,205,140,1);
+}
+
+.party-status {
+    font-size: 12px;
+    color: rgba(215,205,140,0.6);
+    font-style: italic;
+    text-align: center;
+    min-height: 18px;
+}
+
+/* PARTY CARDS */
+.party-card {
+    background: rgba(20,20,20,0.82);
+    border: 1px solid rgba(215,205,140,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: border-color 0.2s;
+}
+
+.party-card:hover { border-color: rgba(215,205,140,0.4); }
+
+.party-card-header {
+    padding: 12px 18px 8px;
+    border-bottom: 1px solid rgba(215,205,140,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.party-card-number {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(215,205,140,0.6);
+}
+
+.party-card-date {
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+}
+
+.party-card-body {
+    padding: 14px 18px 10px;
+}
+
+.party-card-headline {
+    font-size: 11px;
+    font-weight: bold;
+    color: rgba(215,205,140,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.party-card-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.party-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 11px;
+    color: rgba(215,205,140,0.5);
+}
+
+.party-card img {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.party-card-footer {
+    padding: 10px 18px;
+    border-top: 1px solid rgba(215,205,140,0.1);
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.party-card-footer:hover { color: #ff7eb9; }
+
+/* PINK THEME */
+body.theme-pink .parties-section-title { color: #d4006e !important; opacity: 0.7; }
+body.theme-pink .party-subtitle { color: #999 !important; }
+body.theme-pink .party-form input,
+body.theme-pink .party-form textarea { background: rgba(255,255,255,0.9) !important; border-color: #f0a0c0 !important; color: #333 !important; }
+body.theme-pink .party-form input::placeholder,
+body.theme-pink .party-form textarea::placeholder { color: #bbb !important; }
+body.theme-pink .party-fields input { background: rgba(255,255,255,0.9) !important; border-color: #f0a0c0 !important; color: #333 !important; color-scheme: light; }
+body.theme-pink .upload-label { border-color: #d4006e !important; color: #d4006e !important; }
+body.theme-pink .party-form button { border-color: #d4006e !important; color: #d4006e !important; }
+body.theme-pink .party-status { color: #d4006e !important; }
+body.theme-pink .party-card { background: rgba(255,255,255,0.92) !important; border-color: #f0a0c0 !important; }
+body.theme-pink .party-card-number { color: #d4006e !important; }
+body.theme-pink .party-card-headline { color: #d4006e !important; }
+body.theme-pink .party-card-text { color: #333 !important; }
+body.theme-pink .party-card-meta { color: #d4006e !important; opacity: 0.6; }
+body.theme-pink .party-card-footer { color: #aaa !important; }
+body.theme-pink .party-card-footer:hover { color: #d4006e !important; }
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .parties-container { flex-direction: column; }
+    .party-generator { width: 100%; position: static; }
+}

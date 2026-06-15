@@ -1,0 +1,85 @@
+.about-right {
+    padding-top: 40px !important;
+}
+
+.about-container {
+    max-width: 580px;
+    margin: 0 auto 0 0;
+}
+
+.about-header {
+    margin-bottom: 48px;
+}
+
+.about-tagline {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: #F4EED8;
+    margin-bottom: 4px;
+}
+
+.about-sub {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(215,205,140,0.5);
+    text-transform: lowercase;
+}
+
+.about-block {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(215,205,140,0.1);
+}
+
+.about-block:last-of-type {
+    border-bottom: none;
+}
+
+.about-block h3 {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: rgba(215,205,140,0.6);
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+
+.about-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+}
+
+.about-link {
+    color: rgba(215,205,140,0.8);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(215,205,140,0.3);
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.about-link:hover {
+    color: rgba(215,205,140,1);
+    border-color: rgba(215,205,140,0.7);
+}
+
+.about-footer {
+    margin-top: 48px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgba(215,205,140,0.4);
+    font-style: italic;
+}
+
+/* PINK THEME */
+body.theme-pink .about-tagline { color: #d4006e !important; }
+body.theme-pink .about-sub { color: #d4006e !important; opacity: 0.5; }
+body.theme-pink .about-block { border-bottom-color: #f0a0c0 !important; }
+body.theme-pink .about-block h3 { color: #d4006e !important; opacity: 0.7; }
+body.theme-pink .about-block p { color: #333 !important; }
+body.theme-pink .about-link { color: #d4006e !important; border-color: #f0a0c0 !important; }
+body.theme-pink .about-footer { color: #d4006e !important; opacity: 0.4; }

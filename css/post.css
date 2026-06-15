@@ -1,0 +1,108 @@
+.back-btn {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: rgba(215,205,140,0.6);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    transition: color 0.2s;
+}
+
+.back-btn:hover { color: rgba(215,205,140,1); }
+
+.comments-section {
+    max-width: 640px;
+    margin: 32px auto 0 0;
+}
+
+.comments-title {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: rgba(215,205,140,0.6);
+    text-transform: lowercase;
+    margin-bottom: 16px;
+}
+
+.comment-input-wrap {
+    margin-bottom: 24px;
+}
+
+.comment-input-wrap textarea {
+    width: 100%;
+    background: rgba(20,20,20,0.82);
+    border: 1px solid rgba(215,205,140,0.2);
+    border-radius: 4px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    padding: 12px 16px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.comment-input-wrap textarea:focus {
+    border-color: rgba(215,205,140,0.5);
+}
+
+.comment-input-wrap textarea::placeholder {
+    color: rgba(255,255,255,0.25);
+    font-style: italic;
+}
+
+.comment-input-wrap button {
+    background: transparent;
+    border: 1px solid rgba(215,205,140,0.4);
+    color: rgba(215,205,140,0.7);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: all 0.2s;
+}
+
+.comment-input-wrap button:hover {
+    border-color: rgba(215,205,140,0.8);
+    color: rgba(215,205,140,1);
+}
+
+.comment-item {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(215,205,140,0.1);
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+}
+
+.comment-time {
+    font-size: 10px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+
+.comments-empty {
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 2px;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* PINK THEME */
+body.theme-pink .back-btn { color: #d4006e !important; opacity: 0.6; }
+body.theme-pink .back-btn:hover { opacity: 1; }
+body.theme-pink .comments-title { color: #d4006e !important; opacity: 0.7; }
+body.theme-pink .comment-input-wrap textarea { background: rgba(255,255,255,0.9) !important; border-color: #f0a0c0 !important; color: #333 !important; }
+body.theme-pink .comment-input-wrap textarea::placeholder { color: #bbb !important; }
+body.theme-pink .comment-input-wrap button { border-color: #d4006e !important; color: #d4006e !important; }
+body.theme-pink .comment-item { color: #333 !important; border-bottom-color: #f0a0c0 !important; }
+body.theme-pink .comment-time { color: #bbb !important; }
+body.theme-pink .comments-empty { color: #d4006e !important; opacity: 0.4; }

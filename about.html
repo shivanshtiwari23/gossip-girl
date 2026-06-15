@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gossip Girl — Welcome</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link id="themeLink" rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="feed-background"></div>
+
+<div class="feed-wrapper">
+
+    <aside class="feed-left">
+        <a href="index.html" class="feed-logo">gossip girl</a>
+        <div class="feed-controls">
+            <button id="musicToggle" title="Toggle music">🔊</button>
+            <button id="themeToggle" title="Toggle theme">💋</button>
+        </div>
+        <nav class="feed-nav">
+            <a href="about.html" class="feed-nav-item welcome">
+                <h2>welcome</h2>
+                <p>to Gossip Girl! The Site ABOUT the Upper East Side, FOR the Upper East Side and BY the Upper East Side!</p>
+            </a>
+            <a href="feed.html" class="feed-nav-item gossip">
+                <h2>gossip</h2>
+                <p>The latest "411" on all the in people.</p>
+            </a>
+            <a href="pics.html" class="feed-nav-item pics">
+                <h2>pics</h2>
+                <p>See what the fashionistas of the UES are wearing.</p>
+            </a>
+            <a href="parties.html" class="feed-nav-item parties">
+                <h2>parties</h2>
+                <p>Your invitation was probably lost in the mail.</p>
+            </a>
+            <a href="links.html" class="feed-nav-item links">
+                <h2>links</h2>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="feed-right about-right">
+
+        <div class="about-container">
+
+            <div class="about-header">
+                <p class="about-tagline">you know you love me.</p>
+                <p class="about-sub">xoxo, gossip girl</p>
+            </div>
+
+            <div class="about-block">
+                <h3>what is this?</h3>
+                <p>A fan-made anonymous imageboard inspired by the Gossip Girl TV show. No accounts. No usernames. No identity. Just gossip.</p>
+            </div>
+
+            <div class="about-block">
+                <h3>what can you do here?</h3>
+                <p>Create gossip blasts — pick a photo, write a headline, spill the tea — and post them anonymously to the feed. Browse what others have posted. Comment. Judge. Repeat.</p>
+            </div>
+
+            <div class="about-block">
+                <h3>how does it work?</h3>
+                <p>Hit <a href="generator.html" class="about-link">Send a Tip</a> on the home page to create your gossip card. Once you're happy with it, hit the upload button to post it to the feed. That's it. No sign up required.</p>
+            </div>
+
+            <div class="about-block">
+                <h3>the rules</h3>
+                <p>Keep it fictional. Keep it fun. This is inspired by a TV show — nobody real should be targeted. Gossip Girl was scandalous but never cruel.</p>
+            </div>
+
+            <div class="about-block">
+                <h3>who made this?</h3>
+                <p>A fan project built with pure HTML, CSS and vanilla JavaScript on the frontend — Spring Boot and MySQL on the backend. No frameworks. No fluff. Just vibes and code.</p>
+            </div>
+
+            <div class="about-footer">
+                <p>— XOXO, Gossip Girl</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="assets/audio/Gossip Girl Theme Song (Instrumental).mp3" type="audio/mpeg">
+</audio>
+<audio id="hoverSound" src="assets/audio/hover.mp3" preload="auto"></audio>
+
+<script src="js/audio.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/hover.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.pics-right {
+    padding-top: 40px !important;
+}
+
+.pics-title {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: rgba(215,205,140,0.6);
+    text-transform: lowercase;
+    margin-bottom: 24px;
+}
+
+.pics-grid {
+    columns: 3;
+    column-gap: 12px;
+    max-width: 900px;
+}
+
+.pic-item {
+    break-inside: avoid;
+    margin-bottom: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid rgba(215,205,140,0.15);
+    transition: border-color 0.2s;
+}
+
+.pic-item:hover {
+    border-color: rgba(215,205,140,0.5);
+}
+
+.pic-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.pic-item:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.1);
+}
+
+.pic-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 10px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+
+.pic-item:hover .pic-overlay {
+    opacity: 1;
+}
+
+/* PINK THEME */
+body.theme-pink .pics-title { color: #d4006e !important; opacity: 0.7; }
+body.theme-pink .pic-item { border-color: #f0a0c0 !important; }
+body.theme-pink .pic-item:hover { border-color: #d4006e !important; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .pics-grid { columns: 2; }
+}
+
+@media (max-width: 480px) {
+    .pics-grid { columns: 1; }
+}
