@@ -11,9 +11,8 @@ Gossip Girl XOXO is a Gossip Girl-inspired social platform and anonymous image b
 ![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 ![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-green)
 
-🌐 **Live Website:** https://shivanshtiwari23.github.io/gossip-girl/
-
-⚙️ **Backend repo:** https://github.com/shivanshtiwari23/gossip-girl-api
+- 🌐 **Live Website:** [gossip-girl](https://shivanshtiwari23.github.io/gossip-girl/)
+- ⚙️ **Backend Repo:** [gossip-girl-api](https://github.com/shivanshtiwari23/gossip-girl-api)
 ---
 
 ## Features
