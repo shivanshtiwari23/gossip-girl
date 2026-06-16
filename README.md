@@ -13,6 +13,29 @@ Gossip Girl XOXO is a Gossip Girl-inspired social platform and anonymous image b
 
 ## Features
 
+### 🖼 Anonymous Image Board
+
+Upload images alongside posts to create visual gossip threads, reactions, and community discussions.
+
+---
+
+### 📰 Community Feed
+
+Browse the latest gossip, images, and submissions from across the platform in a continuously updated public feed.
+
+---
+
+### 💬 Threaded Discussions
+
+Users can engage with existing gossip through replies and discussions, allowing stories and rumors to evolve organically within the community.
+
+---
+
+### 📸 Multimedia Posts
+
+Create posts using a combination of text and images, bringing gossip stories to life through visual content.
+
+---
 ### ✨ Gossip Blast Generator
 
 Create custom Gossip Girl-style blasts by adding:
