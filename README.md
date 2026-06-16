@@ -125,7 +125,11 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 * JavaScript
 * Web Speech API
 * GitHub Pages
-
+* Java
+* Springboot
+* Mysql
+* Cloudinary
+* Railway.app
 ---
 
 ## Safari / iPhone Notice
@@ -139,16 +143,6 @@ If you are using **Safari on iPhone**, please note the following known limitatio
 * Download functionality may behave differently and has not been extensively tested on Safari iOS.
 
 For the best experience, use **Google Chrome**.
-
----
-
-## Future Plans
-
-* Improved mobile responsiveness
-* Community tip submission system
-* Public gossip feed
-* Additional visual effects and animations
-* More customization options for generated blasts
 
 ---
 
