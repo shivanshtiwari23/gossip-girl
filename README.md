@@ -1,6 +1,6 @@
 # Gossip Blast
 
-A Gossip Girl-inspired web application that lets users create aesthetic Gossip Girl-style blasts with custom headlines, gossip text, images, background music, and narration.
+Gossip Girl XOXO is a Gossip Girl-inspired social platform and anonymous image board where users can share gossip, post images, create iconic Gossip Girl blasts, interact with community content
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
