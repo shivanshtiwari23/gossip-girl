@@ -7,9 +7,11 @@ function applyTheme(theme) {
     if (theme === "pink") {
         themeLink.href = "css/theme-pink.css";
         themeToggle.textContent = "🌙";
+        document.body.classList.add("theme-pink");
     } else {
         themeLink.href = "";
         themeToggle.textContent = "💋";
+        document.body.classList.remove("theme-pink");
     }
     localStorage.setItem("theme", theme);
 }
