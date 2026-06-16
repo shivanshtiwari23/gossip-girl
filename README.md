@@ -91,7 +91,7 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 
 ### Generated Blast Example
 
-<img width="1897" height="874" alt="image" src="https://github.com/user-attachments/assets/085b9fb2-f17d-4bc0-85a4-040f7aefa48a" />
+<img width="1899" height="866" alt="image" src="https://github.com/user-attachments/assets/d43e0242-3d7e-46f6-8b97-c7ac69c6fdc5" />
 
 
 ---
@@ -102,6 +102,31 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 
 
 ---
+
+### Upload Feature
+
+<img width="358" height="145" alt="image" src="https://github.com/user-attachments/assets/8b244827-0b55-4327-8dac-41c917541423" />
+
+
+---
+
+### Feed Wall
+
+<img width="1901" height="867" alt="image" src="https://github.com/user-attachments/assets/a5c9564c-8249-4b4b-ba72-eb68e0d34854" />
+
+---
+
+### Photo Archive
+
+<img width="1901" height="867" alt="Screenshot 2026-06-16 165123" src="https://github.com/user-attachments/assets/631c2c89-5808-4948-999b-a6ff21d367ce" />
+
+---
+
+### Post and Comment
+
+<img width="644" height="833" alt="image" src="https://github.com/user-attachments/assets/bf31a501-69a8-43e0-9667-4e5866ebf062" />
+
+----
 
 ### 🌙 Pink Theme
 
