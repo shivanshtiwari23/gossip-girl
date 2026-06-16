@@ -141,6 +141,15 @@ The website includes 2 themes 1. Dark theme 2. Pink theme so users can generate 
 
 <img width="106" height="183" alt="image" src="https://github.com/user-attachments/assets/449bc8cb-d55a-4937-9e3a-19d63f1d8d9c" />
 
+
+<img width="1901" height="862" alt="image" src="https://github.com/user-attachments/assets/9079b2d7-197d-493d-81d1-697528bc982f" />
+
+
+<img width="1903" height="864" alt="image" src="https://github.com/user-attachments/assets/faea6a8a-34fa-48c4-950f-a2ab438cd627" />
+
+
+<img width="1898" height="871" alt="image" src="https://github.com/user-attachments/assets/33b6d39e-af7c-406b-b65d-26f78ec11032" />
+
 ---
 
 ## Technologies Used
