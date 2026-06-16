@@ -5,6 +5,10 @@ Gossip Girl XOXO is a Gossip Girl-inspired social platform and anonymous image b
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Java](https://img.shields.io/badge/Java-17-red)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![REST API](https://img.shields.io/badge/REST_API-Backend-success)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 ![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-green)
 
 🌐 **Live Website:** https://shivanshtiwari23.github.io/gossip-girl/
